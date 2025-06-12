@@ -6,7 +6,7 @@ import "./Tensores.css";
 
 // URL do backend com o IP e a porta corretos
 const backendUrl = window.location.hostname === "localhost"
-    ? "http://localhost:8121" // URL para desenvolvimento local
+    ? "http://localhost:8081" // URL para desenvolvimento local
     : "https://backprod.onrender.com"; // URL para produção
 
 export default function Tensores() {
