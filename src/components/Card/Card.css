@@ -1,0 +1,61 @@
+.CardField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 90vw;
+    max-width: 90vw;
+    max-height: 50vh;
+    background-color: var(--main-bg-color);
+
+    border-radius: 10px;
+
+    margin: 40px;
+
+    padding: 10px;
+    overflow: hidden; /* Evita que conteúdo extrapole o card */
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Garantir que o conteúdo comece do topo */
+    align-items: center;
+
+    width: 85vw;
+    max-height: 35vh; /* Limita a altura do conteúdo interno */
+    padding: 20px;
+    margin-top: 15px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    overflow-y: auto; 
+    overflow-x: auto;
+}
+
+.MatrixTable {
+    width: 100%;
+    border-collapse: collapse; /* Colapsa as bordas */
+    text-align: center; /* Centraliza o texto */
+}
+
+.MatrixTable td {
+    border: 1px solid #ccc; /* Adiciona borda às células */
+    padding: 10px; /* Adiciona preenchimento às células */
+    min-width: 50px; /* Define uma largura mínima para as colunas */
+    word-wrap: break-word; /* Quebra as palavras longas para caber na célula */
+}
